@@ -2,5 +2,11 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true
-  }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/metro/runtime.ts",
+    "src/types/**/*.d.ts" // <--- ADICIONE OU VERIFIQUE ESTA LINHA
+  ]
 }
