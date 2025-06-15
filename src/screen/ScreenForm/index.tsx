@@ -16,26 +16,29 @@ export const ScreenForm = ({ handleChangeScreen }: ScreenFormProps) => {
             <TouchableOpacity onPress={() => handleChangeScreen(1)} style={styles.sectionImg}>
                 <Image style={styles.logo} source={Logo}/>
             </TouchableOpacity>
-            <Text style={styles.title}>ScreenForm</Text>
             <View style={styles.formContent}>
+                <Text style={styles.textLabel}>Digite seu nome</Text>
                 <TextInput
                     style={styles.inputText}
                     placeholder="Digite seu nome"
                     onChangeText={newText => setNome(newText)}
                     defaultValue={nome}
                 />
+                <Text style={styles.textLabel}>Digite seu telefone</Text>
                 <TextInput
                     style={styles.inputText}
                     placeholder="Digite seu telefone"
                     onChangeText={newText => setTelefone(newText)}
                     defaultValue={telefone}
                 />
+                <Text style={styles.textLabel}>Digite sua localizacao</Text>
                 <TextInput
-                    style={styles.inputTextArea}
+                    style={styles.inputText}
                     placeholder="Digite sua localização"
                     onChangeText={newText => setLocalizacao(newText)}
                     defaultValue={localizacao}
                 />
+                <Text style={styles.textLabel}>Digite sua observação</Text>
                 <TextInput
                     style={styles.inputTextArea}
                     placeholder="Digite uma observacao"
@@ -44,7 +47,7 @@ export const ScreenForm = ({ handleChangeScreen }: ScreenFormProps) => {
                 />
                 <TouchableOpacity onPress={() => handleChangeScreen(1)} style={styles.btnSubmit}>
                     <View>
-                        <Text style={{color:'#fff',fontWeight:600,fontSize:20}}>Enviar</Text>
+                        <Text style={{color:'#fff',fontWeight:600,fontSize:20, textAlign:'center'}}>Enviar</Text>
                     </View>
                 </TouchableOpacity>
 
