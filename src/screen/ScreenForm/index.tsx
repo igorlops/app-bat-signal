@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet, TextInput, Touchable, TouchableOpacity, Image } from 'react-native';
+import { View, Text, Button, StyleSheet, TextInput, Touchable, TouchableOpacity, Image, ScrollView } from 'react-native';
 import Logo from '../../../assets/logo.png';
 import {styles} from './style'
 interface ScreenFormProps {
@@ -44,6 +44,8 @@ export const ScreenForm = ({ handleChangeScreen }: ScreenFormProps) => {
                     placeholder="Digite uma observacao"
                     onChangeText={newText => setObservacao(newText)}
                     defaultValue={observacao}
+                    multiline={true} // Deixar explícito que é true
+                    numberOfLines={4} // Ajuda a definir a altura inicial no Android
                 />
                 <TouchableOpacity onPress={() => handleChangeScreen(1)} style={styles.btnSubmit}>
                     <View>

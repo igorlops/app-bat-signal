@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     content: {
+        flex:1,
         display:'flex',
         flexDirection:'column',
         alignItems: 'flex-start',
@@ -15,8 +16,6 @@ export const styles = StyleSheet.create({
         flexDirection:'column',
         justifyContent:'flex-start',
         width:'100%',
-        padding:0,
-        margin:0,
     },
     logo: {
         width:100,
@@ -34,7 +33,6 @@ export const styles = StyleSheet.create({
         gap:20,
         justifyContent:'flex-start',
         width:'100%',
-        paddingHorizontal:'10%',
 
     },
     textLabel: {
@@ -52,11 +50,14 @@ export const styles = StyleSheet.create({
     },
     inputTextArea: {
         borderColor: '#a4a4a4',
-        borderWidth:2,
+        borderWidth: 2,
         paddingVertical: 10,
-        paddingHorizontal:20,
-        borderRadius:7,
-        width:'100%'
+        paddingHorizontal: 20,
+        borderRadius: 7,
+        width: '100%',
+        fontSize: 20,
+        height: 120,
+        textAlignVertical: 'top',
     },
     btnSubmit: {
         backgroundColor: '#666',

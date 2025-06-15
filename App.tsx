@@ -5,7 +5,7 @@ import { ScreenForm } from './src/screen/ScreenForm';
 import { ScreenInitial } from './src/screen/ScreenInitial';
 
 export default function App() {
-    const [screenAtual, setScreenAtual] = useState(2);
+    const [screenAtual, setScreenAtual] = useState(1);
 
     function handleChangeScreen(setScreen: number) {
         setScreenAtual(setScreen);
